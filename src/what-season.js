@@ -14,11 +14,11 @@ const { NotImplementedError } = require('../extensions/index.js');
 
 function getSeason(/* date */) {
   let nameOfSeason = date.getMounth()
-  if (nameOfSeason>=3&&nameOfSeason<=5) {
+  if (nameOfSeason>=2&&nameOfSeason<=4) {
     return 'spring';
-  } else if (nameOfSeason>=6&&nameOfSeason<=8) {
+  } else if (nameOfSeason>=5&&nameOfSeason<=7) {
     return 'summer';
-  } else if (nameOfSeason>=9&&nameOfSeason<=11) {
+  } else if (nameOfSeason>=8&&nameOfSeason<=10) {
     return 'autumn';
   } else {
     return 'winter';

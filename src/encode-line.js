@@ -11,7 +11,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function encodeLine() {
-  let encoder = new TextEncoder();
+  let encoder = new TextEncoder(str);
   let uint8Array = encoder.encode(str);
   return uint8Array;
 }
